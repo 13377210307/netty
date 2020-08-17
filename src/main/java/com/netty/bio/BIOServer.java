@@ -31,6 +31,7 @@ public class BIOServer {
     public static void main(String[] args) throws Exception {
 
 
+        // 创建一个线程池
         ExecutorService newCachedThreadPool = Executors.newCachedThreadPool();
 
         // 创建serversocket
@@ -56,6 +57,7 @@ public class BIOServer {
             });
         }
     }
+
 
     // 与客户端通讯方法
     private static void handler(Socket socket) {
